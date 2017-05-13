@@ -2,7 +2,7 @@
 /**
   * @var \App\View\AppView $this
   */
-$sha1 = Security::hash('CakePHP Framework', 'sha1', true);
+#$sha1 = Security::hash('CakePHP Framework', 'sha1', true);
 ?>
 <nav class="large-3 medium-4 columns" id="actions-sidebar">
     <ul class="side-nav">
