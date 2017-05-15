@@ -26,7 +26,6 @@
             echo $this->Form->control('email');
             echo $this->Form->control('password');
             echo $this->Form->control('bio');
-            echo $this->Form->control('admin');
         ?>
     </fieldset>
     <?= $this->Form->button(__('Submit')) ?>
