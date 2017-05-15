@@ -1,0 +1,17 @@
+2017-05-14 16:20:35 Error: [Cake\Database\Exception] SQLSTATE[42S02]: Base table or view not found: 1146 Table 'seriestv.contact' doesn't exist in /var/www/html/cakephp_seriestv/vendor/cakephp/cakephp/src/Database/Schema/Collection.php on line 131
+Stack Trace:
+#0 /var/www/html/cakephp_seriestv/vendor/cakephp/cakephp/src/Database/Schema/Collection.php(97): Cake\Database\Schema\Collection->_reflect('Column', 'contact', Array, Object(Cake\Database\Schema\TableSchema))
+#1 /var/www/html/cakephp_seriestv/vendor/cakephp/cakephp/src/Database/Schema/CachedCollection.php(63): Cake\Database\Schema\Collection->describe('contact', Array)
+#2 /var/www/html/cakephp_seriestv/vendor/cakephp/cakephp/src/ORM/Table.php(531): Cake\Database\Schema\CachedCollection->describe('contact')
+#3 /var/www/html/cakephp_seriestv/vendor/cakephp/cakephp/src/ORM/Table.php(652): Cake\ORM\Table->getSchema()
+#4 /var/www/html/cakephp_seriestv/vendor/cakephp/bake/src/Shell/Task/TemplateTask.php(291): Cake\ORM\Table->getPrimaryKey()
+#5 /var/www/html/cakephp_seriestv/vendor/cakephp/bake/src/Shell/Task/TemplateTask.php(148): Bake\Shell\Task\TemplateTask->_loadController()
+#6 /var/www/html/cakephp_seriestv/vendor/cakephp/cakephp/src/Console/Shell.php(472): Bake\Shell\Task\TemplateTask->main('contact')
+#7 /var/www/html/cakephp_seriestv/vendor/cakephp/cakephp/src/Console/Shell.php(465): Cake\Console\Shell->runCommand(Array, false, Array)
+#8 /var/www/html/cakephp_seriestv/vendor/cakephp/cakephp/src/Console/ShellDispatcher.php(230): Cake\Console\Shell->runCommand(Array, true, Array)
+#9 /var/www/html/cakephp_seriestv/vendor/cakephp/cakephp/src/Console/ShellDispatcher.php(182): Cake\Console\ShellDispatcher->_dispatch(Array)
+#10 /var/www/html/cakephp_seriestv/vendor/cakephp/cakephp/src/Console/ShellDispatcher.php(128): Cake\Console\ShellDispatcher->dispatch(Array)
+#11 /var/www/html/cakephp_seriestv/bin/cake.php(34): Cake\Console\ShellDispatcher::run(Array)
+#12 {main}
+
+
