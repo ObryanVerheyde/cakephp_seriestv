@@ -62,10 +62,12 @@ class AppController extends Controller
         //$this->loadComponent('Security');
         //$this->loadComponent('Csrf');
     }
+
     public function beforeFilter(Event $event)
     {
         $this->Auth->allow(['index', 'view', 'display']);
     }
+
     /**
      * Before render callback.
      *

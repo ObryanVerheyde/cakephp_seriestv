@@ -160,7 +160,11 @@ Security::salt(Configure::consume('Security.salt'));
  * If you are migrating from 2.x uncomment this code to
  * use a more compatible Mcrypt based implementation
  */
+
 Security::engine(new \Cake\Utility\Crypto\Mcrypt());
+
+//Security::engine(new \Cake\Utility\Crypto\Mcrypt());
+
 
 /*
  * Setup detectors for mobile and tablet.
