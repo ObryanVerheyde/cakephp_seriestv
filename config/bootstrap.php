@@ -165,7 +165,6 @@ Security::engine(new \Cake\Utility\Crypto\Mcrypt());
 
 //Security::engine(new \Cake\Utility\Crypto\Mcrypt());
 
-
 /*
  * Setup detectors for mobile and tablet.
  */
