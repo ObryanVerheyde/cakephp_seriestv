@@ -16,7 +16,6 @@ namespace App\Controller;
 
 use Cake\Controller\Controller;
 use Cake\Event\Event;
-
 /**
  * Application Controller
  *
@@ -28,6 +27,7 @@ use Cake\Event\Event;
 class AppController extends Controller
 {
 
+  /*  use \Crud\Controller\ControllerTrait; */
     /**
      * Initialization hook method.
      *
@@ -53,8 +53,12 @@ class AppController extends Controller
               'action' => 'index',
               'home'
             ]
-]);
-
+        ]);
+        $this->loadComponent('Crud.Crud', [
+           'actions' => [
+               'Crud.Index'
+           ]
+       ]);
         /*
          * Enable the following components for recommended CakePHP security settings.
          * see http://book.cakephp.org/3.0/en/controllers/components/security.html

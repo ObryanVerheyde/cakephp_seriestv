@@ -15,3 +15,27 @@ Stack Trace:
 #12 {main}
 
 
+2017-05-18 12:46:08 Error: [Cake\Console\Exception\MissingShellException] Shell class for "Serve" could not be found. in /var/www/html/cakephp_seriestv/vendor/cakephp/cakephp/src/Console/ShellDispatcher.php on line 327
+Exception Attributes: array (
+  'class' => 'Serve',
+)
+Stack Trace:
+#0 /var/www/html/cakephp_seriestv/vendor/cakephp/cakephp/src/Console/ShellDispatcher.php(226): Cake\Console\ShellDispatcher->findShell('Serve')
+#1 /var/www/html/cakephp_seriestv/vendor/cakephp/cakephp/src/Console/ShellDispatcher.php(182): Cake\Console\ShellDispatcher->_dispatch(Array)
+#2 /var/www/html/cakephp_seriestv/vendor/cakephp/cakephp/src/Console/ShellDispatcher.php(128): Cake\Console\ShellDispatcher->dispatch(Array)
+#3 /var/www/html/cakephp_seriestv/bin/cake.php(34): Cake\Console\ShellDispatcher::run(Array)
+#4 {main}
+
+
+2017-05-18 20:44:33 Error: [Cake\Console\Exception\MissingShellException] Shell class for "Composer" could not be found. in /var/www/html/cakephp_seriestv/vendor/cakephp/cakephp/src/Console/ShellDispatcher.php on line 327
+Exception Attributes: array (
+  'class' => 'Composer',
+)
+Stack Trace:
+#0 /var/www/html/cakephp_seriestv/vendor/cakephp/cakephp/src/Console/ShellDispatcher.php(226): Cake\Console\ShellDispatcher->findShell('Composer')
+#1 /var/www/html/cakephp_seriestv/vendor/cakephp/cakephp/src/Console/ShellDispatcher.php(182): Cake\Console\ShellDispatcher->_dispatch(Array)
+#2 /var/www/html/cakephp_seriestv/vendor/cakephp/cakephp/src/Console/ShellDispatcher.php(128): Cake\Console\ShellDispatcher->dispatch(Array)
+#3 /var/www/html/cakephp_seriestv/bin/cake.php(34): Cake\Console\ShellDispatcher::run(Array)
+#4 {main}
+
+

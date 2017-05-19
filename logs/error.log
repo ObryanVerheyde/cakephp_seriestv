@@ -1214,3 +1214,307 @@ Stack Trace:
 2017-05-15 14:22:11 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
 2017-05-15 14:22:18 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
 2017-05-15 14:22:27 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-05-15 15:05:27 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-05-15 15:05:36 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-05-15 15:05:36 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-05-15 15:05:39 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-05-15 15:05:39 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-05-15 15:05:51 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-05-15 15:05:51 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-05-16 12:09:43 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-05-16 20:17:17 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-05-16 20:24:53 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-05-17 08:52:45 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-05-17 19:06:46 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-05-17 19:10:08 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-05-18 12:46:14 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-05-18 12:46:25 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-05-18 12:46:31 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-05-18 12:46:38 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-05-18 12:47:01 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-05-18 12:47:02 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-05-18 13:05:37 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-05-18 13:05:38 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-05-18 13:05:46 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-05-18 13:05:50 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-05-18 13:05:51 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-05-18 13:06:00 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-05-18 13:06:01 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-05-18 13:11:29 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-05-18 13:11:29 Error: [Cake\Controller\Exception\MissingActionException] Action UsersController::9() could not be found, or is not accessible.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => '9',
+  'prefix' => '',
+  'plugin' => false,
+)
+Request URL: /users/9
+Stack Trace:
+#0 /var/www/html/cakephp_seriestv/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(119): Cake\Controller\Controller->invokeAction()
+#1 /var/www/html/cakephp_seriestv/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(93): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\UsersController))
+#2 /var/www/html/cakephp_seriestv/vendor/cakephp/cakephp/src/Http/BaseApplication.php(78): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#3 /var/www/html/cakephp_seriestv/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#4 /var/www/html/cakephp_seriestv/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php(59): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#5 /var/www/html/cakephp_seriestv/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#6 /var/www/html/cakephp_seriestv/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#7 /var/www/html/cakephp_seriestv/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#8 /var/www/html/cakephp_seriestv/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php(92): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 /var/www/html/cakephp_seriestv/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 /var/www/html/cakephp_seriestv/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 /var/www/html/cakephp_seriestv/vendor/cakephp/cakephp/src/Http/Server.php(80): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#12 /var/www/html/cakephp_seriestv/webroot/index.php(37): Cake\Http\Server->run()
+#13 {main}
+
+
+2017-05-18 13:11:37 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-05-18 13:12:56 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-05-18 13:13:05 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-05-18 13:13:11 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-05-18 13:13:16 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-05-18 13:13:27 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-05-18 13:13:27 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-05-18 13:13:33 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-05-18 13:13:33 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-05-18 13:13:39 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-05-18 13:13:40 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-05-18 20:08:02 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-05-18 20:08:44 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-05-18 20:11:00 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-05-18 20:11:06 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-05-18 20:11:06 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-05-18 20:11:20 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-05-18 20:11:22 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-05-18 20:11:22 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-05-18 20:11:25 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-05-18 20:11:29 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-05-18 20:11:31 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-05-18 20:11:31 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-05-18 20:11:31 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-05-18 20:11:36 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-05-18 20:32:21 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-05-18 20:32:34 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-05-18 21:17:23 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-05-18 21:18:48 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-05-18 21:19:16 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-05-18 21:19:39 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-05-18 21:19:39 Error: Fatal Error (1): Trait 'Crud\Controller\ControllerTrait' not found in [/var/www/html/cakephp_seriestv/src/Controller/AppController.php, line 29]
+Request URL: /articles/index/home
+Referer URL: http://localhost:8765/users/login?redirect=%2Fusers%2Flogout
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE/src/Error/BaseErrorHandler.php, line 223
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE/src/Error/BaseErrorHandler.php, line 104
+[main] - [internal], line ??
+
+
+
+2017-05-18 21:19:39 Error: [Cake\Error\FatalErrorException] Trait 'Crud\Controller\ControllerTrait' not found in /var/www/html/cakephp_seriestv/src/Controller/AppController.php on line 29
+Request URL: /articles/index/home
+Referer URL: http://localhost:8765/users/login?redirect=%2Fusers%2Flogout
+Stack Trace:
+#0 /var/www/html/cakephp_seriestv/vendor/cakephp/cakephp/src/Error/BaseErrorHandler.php(104): Cake\Error\BaseErrorHandler->handleFatalError(1, 'Trait 'Crud\\Con...', '/var/www/html/c...', 29)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+
+2017-05-18 21:20:50 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-05-18 21:21:43 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-05-18 21:21:43 Error: Fatal Error (1): Trait 'Crud\Controller\ControllerTrait' not found in [/var/www/html/cakephp_seriestv/src/Controller/AppController.php, line 29]
+Request URL: /articles/index/home
+Referer URL: http://localhost:8765/users/login?redirect=%2Fusers%2Flogout
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE/src/Error/BaseErrorHandler.php, line 223
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE/src/Error/BaseErrorHandler.php, line 104
+[main] - [internal], line ??
+
+
+
+2017-05-18 21:21:43 Error: [Cake\Error\FatalErrorException] Trait 'Crud\Controller\ControllerTrait' not found in /var/www/html/cakephp_seriestv/src/Controller/AppController.php on line 29
+Request URL: /articles/index/home
+Referer URL: http://localhost:8765/users/login?redirect=%2Fusers%2Flogout
+Stack Trace:
+#0 /var/www/html/cakephp_seriestv/vendor/cakephp/cakephp/src/Error/BaseErrorHandler.php(104): Cake\Error\BaseErrorHandler->handleFatalError(1, 'Trait 'Crud\\Con...', '/var/www/html/c...', 29)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+
+2017-05-18 21:22:11 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-05-18 21:22:11 Error: Fatal Error (1): Trait 'Crud\src\Controller\ControllerTrait' not found in [/var/www/html/cakephp_seriestv/src/Controller/AppController.php, line 29]
+Request URL: /articles/index/home
+Referer URL: http://localhost:8765/users/login?redirect=%2Fusers%2Flogout
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE/src/Error/BaseErrorHandler.php, line 223
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE/src/Error/BaseErrorHandler.php, line 104
+[main] - [internal], line ??
+
+
+
+2017-05-18 21:22:11 Error: [Cake\Error\FatalErrorException] Trait 'Crud\src\Controller\ControllerTrait' not found in /var/www/html/cakephp_seriestv/src/Controller/AppController.php on line 29
+Request URL: /articles/index/home
+Referer URL: http://localhost:8765/users/login?redirect=%2Fusers%2Flogout
+Stack Trace:
+#0 /var/www/html/cakephp_seriestv/vendor/cakephp/cakephp/src/Error/BaseErrorHandler.php(104): Cake\Error\BaseErrorHandler->handleFatalError(1, 'Trait 'Crud\\src...', '/var/www/html/c...', 29)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+
+2017-05-18 21:22:47 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-05-18 21:22:47 Error: [Cake\Controller\Exception\MissingComponentException] Component class CrudComponent could not be found.
+Exception Attributes: array (
+  'class' => 'CrudComponent',
+  'plugin' => 'Crud',
+)
+Request URL: /articles/index/home
+Referer URL: http://localhost:8765/users/login?redirect=%2Fusers%2Flogout
+Stack Trace:
+#0 /var/www/html/cakephp_seriestv/vendor/cakephp/cakephp/src/Core/ObjectRegistry.php(91): Cake\Controller\ComponentRegistry->_throwMissingClassError('Crud', 'Crud')
+#1 /var/www/html/cakephp_seriestv/vendor/cakephp/cakephp/src/Controller/Controller.php(322): Cake\Core\ObjectRegistry->load('Crud', Array)
+#2 /var/www/html/cakephp_seriestv/src/Controller/AppController.php(64): Cake\Controller\Controller->loadComponent('Crud.Crud', Array)
+#3 /var/www/html/cakephp_seriestv/vendor/cakephp/cakephp/src/Controller/Controller.php(262): App\Controller\AppController->initialize()
+#4 [internal function]: Cake\Controller\Controller->__construct(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), 'Articles')
+#5 /var/www/html/cakephp_seriestv/vendor/cakephp/cakephp/src/Http/ControllerFactory.php(77): ReflectionClass->newInstance(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), 'Articles')
+#6 /var/www/html/cakephp_seriestv/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(90): Cake\Http\ControllerFactory->create(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#7 /var/www/html/cakephp_seriestv/vendor/cakephp/cakephp/src/Http/BaseApplication.php(78): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#8 /var/www/html/cakephp_seriestv/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#9 /var/www/html/cakephp_seriestv/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php(59): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#10 /var/www/html/cakephp_seriestv/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#11 /var/www/html/cakephp_seriestv/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#12 /var/www/html/cakephp_seriestv/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#13 /var/www/html/cakephp_seriestv/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php(92): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#14 /var/www/html/cakephp_seriestv/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#15 /var/www/html/cakephp_seriestv/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#16 /var/www/html/cakephp_seriestv/vendor/cakephp/cakephp/src/Http/Server.php(80): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#17 /var/www/html/cakephp_seriestv/webroot/index.php(37): Cake\Http\Server->run()
+#18 {main}
+
+
+2017-05-18 21:25:26 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-05-18 21:25:26 Error: [Cake\Controller\Exception\MissingComponentException] Component class CrudComponent could not be found.
+Exception Attributes: array (
+  'class' => 'CrudComponent',
+  'plugin' => 'Crud',
+)
+Request URL: /articles/index/home
+Referer URL: http://localhost:8765/users/login?redirect=%2Fusers%2Flogout
+Stack Trace:
+#0 /var/www/html/cakephp_seriestv/vendor/cakephp/cakephp/src/Core/ObjectRegistry.php(91): Cake\Controller\ComponentRegistry->_throwMissingClassError('Crud', 'Crud')
+#1 /var/www/html/cakephp_seriestv/vendor/cakephp/cakephp/src/Controller/Controller.php(322): Cake\Core\ObjectRegistry->load('Crud', Array)
+#2 /var/www/html/cakephp_seriestv/src/Controller/AppController.php(64): Cake\Controller\Controller->loadComponent('Crud.Crud', Array)
+#3 /var/www/html/cakephp_seriestv/vendor/cakephp/cakephp/src/Controller/Controller.php(262): App\Controller\AppController->initialize()
+#4 [internal function]: Cake\Controller\Controller->__construct(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), 'Articles')
+#5 /var/www/html/cakephp_seriestv/vendor/cakephp/cakephp/src/Http/ControllerFactory.php(77): ReflectionClass->newInstance(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), 'Articles')
+#6 /var/www/html/cakephp_seriestv/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(90): Cake\Http\ControllerFactory->create(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#7 /var/www/html/cakephp_seriestv/vendor/cakephp/cakephp/src/Http/BaseApplication.php(78): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#8 /var/www/html/cakephp_seriestv/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#9 /var/www/html/cakephp_seriestv/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php(59): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#10 /var/www/html/cakephp_seriestv/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#11 /var/www/html/cakephp_seriestv/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#12 /var/www/html/cakephp_seriestv/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#13 /var/www/html/cakephp_seriestv/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php(92): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#14 /var/www/html/cakephp_seriestv/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#15 /var/www/html/cakephp_seriestv/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#16 /var/www/html/cakephp_seriestv/vendor/cakephp/cakephp/src/Http/Server.php(80): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#17 /var/www/html/cakephp_seriestv/webroot/index.php(37): Cake\Http\Server->run()
+#18 {main}
+
+
+2017-05-18 21:26:38 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-05-18 21:26:38 Error: [Cake\Controller\Exception\MissingComponentException] Component class CrudComponent could not be found.
+Exception Attributes: array (
+  'class' => 'CrudComponent',
+  'plugin' => 'Crud',
+)
+Request URL: /articles/index/home
+Referer URL: http://localhost:8765/users/login?redirect=%2Fusers%2Flogout
+Stack Trace:
+#0 /var/www/html/cakephp_seriestv/vendor/cakephp/cakephp/src/Core/ObjectRegistry.php(91): Cake\Controller\ComponentRegistry->_throwMissingClassError('Crud', 'Crud')
+#1 /var/www/html/cakephp_seriestv/vendor/cakephp/cakephp/src/Controller/Controller.php(322): Cake\Core\ObjectRegistry->load('Crud', Array)
+#2 /var/www/html/cakephp_seriestv/src/Controller/AppController.php(64): Cake\Controller\Controller->loadComponent('Crud.Crud', Array)
+#3 /var/www/html/cakephp_seriestv/vendor/cakephp/cakephp/src/Controller/Controller.php(262): App\Controller\AppController->initialize()
+#4 [internal function]: Cake\Controller\Controller->__construct(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), 'Articles')
+#5 /var/www/html/cakephp_seriestv/vendor/cakephp/cakephp/src/Http/ControllerFactory.php(77): ReflectionClass->newInstance(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), 'Articles')
+#6 /var/www/html/cakephp_seriestv/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(90): Cake\Http\ControllerFactory->create(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#7 /var/www/html/cakephp_seriestv/vendor/cakephp/cakephp/src/Http/BaseApplication.php(78): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#8 /var/www/html/cakephp_seriestv/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#9 /var/www/html/cakephp_seriestv/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php(59): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#10 /var/www/html/cakephp_seriestv/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#11 /var/www/html/cakephp_seriestv/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#12 /var/www/html/cakephp_seriestv/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#13 /var/www/html/cakephp_seriestv/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php(92): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#14 /var/www/html/cakephp_seriestv/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#15 /var/www/html/cakephp_seriestv/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#16 /var/www/html/cakephp_seriestv/vendor/cakephp/cakephp/src/Http/Server.php(80): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#17 /var/www/html/cakephp_seriestv/webroot/index.php(37): Cake\Http\Server->run()
+#18 {main}
+
+
+2017-05-18 21:26:40 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-05-18 21:26:40 Error: [Cake\Controller\Exception\MissingComponentException] Component class CrudComponent could not be found.
+Exception Attributes: array (
+  'class' => 'CrudComponent',
+  'plugin' => 'Crud',
+)
+Request URL: /articles/index/home
+Referer URL: http://localhost:8765/users/login?redirect=%2Fusers%2Flogout
+Stack Trace:
+#0 /var/www/html/cakephp_seriestv/vendor/cakephp/cakephp/src/Core/ObjectRegistry.php(91): Cake\Controller\ComponentRegistry->_throwMissingClassError('Crud', 'Crud')
+#1 /var/www/html/cakephp_seriestv/vendor/cakephp/cakephp/src/Controller/Controller.php(322): Cake\Core\ObjectRegistry->load('Crud', Array)
+#2 /var/www/html/cakephp_seriestv/src/Controller/AppController.php(64): Cake\Controller\Controller->loadComponent('Crud.Crud', Array)
+#3 /var/www/html/cakephp_seriestv/vendor/cakephp/cakephp/src/Controller/Controller.php(262): App\Controller\AppController->initialize()
+#4 [internal function]: Cake\Controller\Controller->__construct(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), 'Articles')
+#5 /var/www/html/cakephp_seriestv/vendor/cakephp/cakephp/src/Http/ControllerFactory.php(77): ReflectionClass->newInstance(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), 'Articles')
+#6 /var/www/html/cakephp_seriestv/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(90): Cake\Http\ControllerFactory->create(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#7 /var/www/html/cakephp_seriestv/vendor/cakephp/cakephp/src/Http/BaseApplication.php(78): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#8 /var/www/html/cakephp_seriestv/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#9 /var/www/html/cakephp_seriestv/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php(59): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#10 /var/www/html/cakephp_seriestv/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#11 /var/www/html/cakephp_seriestv/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#12 /var/www/html/cakephp_seriestv/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#13 /var/www/html/cakephp_seriestv/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php(92): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#14 /var/www/html/cakephp_seriestv/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#15 /var/www/html/cakephp_seriestv/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#16 /var/www/html/cakephp_seriestv/vendor/cakephp/cakephp/src/Http/Server.php(80): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#17 /var/www/html/cakephp_seriestv/webroot/index.php(37): Cake\Http\Server->run()
+#18 {main}
+
+
+2017-05-18 21:36:07 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-05-19 08:38:22 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-05-19 08:44:58 Error: Fatal Error (1): Trait 'Crud\Controller\ControllerTrait' not found in [/var/www/html/cakephp_seriestv/src/Controller/AppController.php, line 30]
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE/src/Error/BaseErrorHandler.php, line 223
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE/src/Error/BaseErrorHandler.php, line 104
+[main] - [internal], line ??
+
+
+
+2017-05-19 08:44:58 Error: [Cake\Error\FatalErrorException] Trait 'Crud\Controller\ControllerTrait' not found in /var/www/html/cakephp_seriestv/src/Controller/AppController.php on line 30
+Stack Trace:
+#0 /var/www/html/cakephp_seriestv/vendor/cakephp/cakephp/src/Error/BaseErrorHandler.php(104): Cake\Error\BaseErrorHandler->handleFatalError(1, 'Trait 'Crud\\Con...', '/var/www/html/c...', 30)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+
+2017-05-19 08:46:27 Error: [Cake\Core\Exception\MissingPluginException] Plugin Crud could not be found. in /var/www/html/cakephp_seriestv/vendor/cakephp/cakephp/src/Core/Plugin.php on line 149
+Exception Attributes: array (
+  'plugin' => 'Crud',
+)
+Stack Trace:
+#0 /var/www/html/cakephp_seriestv/config/bootstrap.php(216): Cake\Core\Plugin::load('Crud')
+#1 /var/www/html/cakephp_seriestv/vendor/cakephp/cakephp/src/Http/BaseApplication.php(61): require_once('/var/www/html/c...')
+#2 /var/www/html/cakephp_seriestv/vendor/cakephp/cakephp/src/Http/Server.php(70): Cake\Http\BaseApplication->bootstrap()
+#3 /var/www/html/cakephp_seriestv/webroot/index.php(37): Cake\Http\Server->run()
+#4 {main}
+
+
+2017-05-19 11:22:58 Error: [Cake\Core\Exception\MissingPluginException] Plugin Crud could not be found. in /var/www/html/cakephp_seriestv/vendor/cakephp/cakephp/src/Core/Plugin.php on line 149
+Exception Attributes: array (
+  'plugin' => 'Crud',
+)
+Stack Trace:
+#0 /var/www/html/cakephp_seriestv/config/bootstrap.php(216): Cake\Core\Plugin::load('Crud')
+#1 /var/www/html/cakephp_seriestv/vendor/cakephp/cakephp/src/Http/BaseApplication.php(61): require_once('/var/www/html/c...')
+#2 /var/www/html/cakephp_seriestv/vendor/cakephp/cakephp/src/Http/Server.php(70): Cake\Http\BaseApplication->bootstrap()
+#3 /var/www/html/cakephp_seriestv/webroot/index.php(37): Cake\Http\Server->run()
+#4 {main}
+
+
