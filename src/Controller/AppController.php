@@ -54,7 +54,6 @@ class AppController extends Controller
               'home'
             ]
         ]);
-]);
 
         /*
          * Enable the following components for recommended CakePHP security settings.
