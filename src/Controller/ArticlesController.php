@@ -20,12 +20,24 @@ class ArticlesController extends AppController
      */
     public function index()
     {
-        $articles = $this->paginate($this->Articles);
+      $articles = $this->paginate($this->Articles);
 
-        $this->set(compact('articles'));
-        $this->set('_serialize', ['articles']);
+              $this->Articles->settings = array(
+                'special',
+                'conditions' => array(
+                  'private' => '0',
+                ),
+              );
     }
 
+
+    public function logged()
+    {
+      $articles = $this->paginate($this->Articles);
+
+      $this->set(compact('articles'));
+      $this->set('_serialize', ['articles']);
+    }
     /**
      * View method
      *

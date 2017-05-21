@@ -41,9 +41,16 @@ $cakeDescription = 'CakePHP: the rapid development php framework';
             </li>
         </ul>
         <div class="top-bar-section">
+            <?php if(is_null($this->request->session()->read('Auth.User.username'))){ ?>
+              <ul>
+                <li><a href="http://localhost:8765/users/login">Connecte toi</a></li>
+              </ul>
+            <?php }else{
+              echo "Bonjour" . $this->request->session()->read('Auth.User.username');
+            } ?>
             <ul class="right">
+                <li><a href="http://localhost:8765/users/add">S'inscrire</a></li>
                 <li><a href="http://localhost:8765/users/logout">Déconnexion</a></li>
-                <li><a href="http://localhost:8765/">Articles</a></li>
             </ul>
         </div>
     </nav>

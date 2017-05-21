@@ -21,21 +21,8 @@
             </tr>
         </thead>
         <tbody>
-
-          <p>You're not logged, you can't see private articles.</p>
             <?php
-
-        /*    if (is_null($this->request->session()->read('Auth.User.username'))) {
-
-                echo "You're not logged, you can't see private articles.";
-
-            } else {
-
-                echo "You are logged in as " . $this->request->session()->read('Auth.User.username');
-
-            }*/
-
-            if($this->request->session()->read('Auth.User.username')){
+            if ($this->request->session()->read('Auth.User.username')) {
 
             foreach ($articles as $article): ?>
             <tr>
@@ -48,7 +35,8 @@
                     <?= $this->Form->postLink(__('Delete'), ['action' => 'delete', $article->id], ['confirm' => __('Are you sure you want to delete # {0}?', $article->id)]) ?>
                 </td>
             </tr>
-            <?php endforeach; }?>
+          <?php endforeach;
+          }?>
         </tbody>
     </table>
     <div class="paginator">

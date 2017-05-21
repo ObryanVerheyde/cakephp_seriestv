@@ -39,3 +39,39 @@ Stack Trace:
 #4 {main}
 
 
+2017-05-21 16:17:43 Error: [Cake\Console\Exception\MissingShellException] Shell class for "Src/" could not be found. in /var/www/html/cakephp_seriestv/vendor/cakephp/cakephp/src/Console/ShellDispatcher.php on line 327
+Exception Attributes: array (
+  'class' => 'Src/',
+)
+Stack Trace:
+#0 /var/www/html/cakephp_seriestv/vendor/cakephp/cakephp/src/Console/ShellDispatcher.php(226): Cake\Console\ShellDispatcher->findShell('Src/')
+#1 /var/www/html/cakephp_seriestv/vendor/cakephp/cakephp/src/Console/ShellDispatcher.php(182): Cake\Console\ShellDispatcher->_dispatch(Array)
+#2 /var/www/html/cakephp_seriestv/vendor/cakephp/cakephp/src/Console/ShellDispatcher.php(128): Cake\Console\ShellDispatcher->dispatch(Array)
+#3 /var/www/html/cakephp_seriestv/bin/cake.php(34): Cake\Console\ShellDispatcher::run(Array)
+#4 {main}
+
+
+2017-05-21 16:17:46 Error: [Cake\Console\Exception\MissingShellException] Shell class for "S" could not be found. in /var/www/html/cakephp_seriestv/vendor/cakephp/cakephp/src/Console/ShellDispatcher.php on line 327
+Exception Attributes: array (
+  'class' => 'S',
+)
+Stack Trace:
+#0 /var/www/html/cakephp_seriestv/vendor/cakephp/cakephp/src/Console/ShellDispatcher.php(226): Cake\Console\ShellDispatcher->findShell('S')
+#1 /var/www/html/cakephp_seriestv/vendor/cakephp/cakephp/src/Console/ShellDispatcher.php(182): Cake\Console\ShellDispatcher->_dispatch(Array)
+#2 /var/www/html/cakephp_seriestv/vendor/cakephp/cakephp/src/Console/ShellDispatcher.php(128): Cake\Console\ShellDispatcher->dispatch(Array)
+#3 /var/www/html/cakephp_seriestv/bin/cake.php(34): Cake\Console\ShellDispatcher::run(Array)
+#4 {main}
+
+
+2017-05-21 16:17:49 Error: [Cake\Console\Exception\MissingShellException] Shell class for "Serv" could not be found. in /var/www/html/cakephp_seriestv/vendor/cakephp/cakephp/src/Console/ShellDispatcher.php on line 327
+Exception Attributes: array (
+  'class' => 'Serv',
+)
+Stack Trace:
+#0 /var/www/html/cakephp_seriestv/vendor/cakephp/cakephp/src/Console/ShellDispatcher.php(226): Cake\Console\ShellDispatcher->findShell('Serv')
+#1 /var/www/html/cakephp_seriestv/vendor/cakephp/cakephp/src/Console/ShellDispatcher.php(182): Cake\Console\ShellDispatcher->_dispatch(Array)
+#2 /var/www/html/cakephp_seriestv/vendor/cakephp/cakephp/src/Console/ShellDispatcher.php(128): Cake\Console\ShellDispatcher->dispatch(Array)
+#3 /var/www/html/cakephp_seriestv/bin/cake.php(34): Cake\Console\ShellDispatcher::run(Array)
+#4 {main}
+
+
