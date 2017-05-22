@@ -14,41 +14,41 @@
     <table cellpadding="0" cellspacing="0">
         <thead>
             <tr>
-                <th scope="col"><?= $this->Paginator->sort('id') ?></th>
                 <th scope="col"><?= $this->Paginator->sort('title') ?></th>
-                <th scope="col"><?= $this->Paginator->sort('private') ?></th>
+                <th scope="col"><?= $this->Paginator->sort('content') ?></th>
                 <th scope="col" class="actions"><?= __('Actions') ?></th>
             </tr>
         </thead>
+<!--NOT LOGGED                                 -->
+        <?php if(is_null($this->request->session()->read('Auth.User.username'))){ ?>
         <tbody>
-
           <p>You're not logged, you can't see private articles.</p>
-            <?php
-
-        /*    if (is_null($this->request->session()->read('Auth.User.username'))) {
-
-                echo "You're not logged, you can't see private articles.";
-
-            } else {
-
-                echo "You are logged in as " . $this->request->session()->read('Auth.User.username');
-
-            }*/
-
-            if($this->request->session()->read('Auth.User.username')){
-
-            foreach ($articles as $article): ?>
+            <?php foreach ($articles as $article): ?>
             <tr>
-                <td><?= $this->Number->format($article->id) ?></td>
                 <td><?= h($article->title) ?></td>
-                <td><?= h($article->private) ?></td>
+                <td><?= h($article->content) ?></td>
                 <td class="actions">
                     <?= $this->Html->link(__('View'), ['action' => 'view', $article->id]) ?>
                     <?= $this->Html->link(__('Edit'), ['action' => 'edit', $article->id]) ?>
                     <?= $this->Form->postLink(__('Delete'), ['action' => 'delete', $article->id], ['confirm' => __('Are you sure you want to delete # {0}?', $article->id)]) ?>
                 </td>
             </tr>
-            <?php endforeach; }?>
+        </tbody>
+        <?php endforeach; } ?>
+<!-- LOGGED iN                                                                      -->
+      <?php if ($this->request->session()->read('Auth.User.username')) { ?>
+        <tbody>
+            <?php foreach ($articles as $article): ?>
+            <tr>
+                <td><?= h($article->title) ?></td>
+                <td><?= h($article->content) ?></td>
+                <td class="actions">
+                    <?= $this->Html->link(__('View'), ['action' => 'view', $article->id]) ?>
+                    <?= $this->Html->link(__('Edit'), ['action' => 'edit', $article->id]) ?>
+                    <?= $this->Form->postLink(__('Delete'), ['action' => 'delete', $article->id], ['confirm' => __('Are you sure you want to delete # {0}?', $article->id)]) ?>
+                </td>
+            </tr>
+          <?php endforeach; } ?>
         </tbody>
     </table>
     <div class="paginator">

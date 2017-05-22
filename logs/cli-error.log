@@ -75,3 +75,15 @@ Stack Trace:
 #4 {main}
 
 
+2017-05-22 20:45:05 Error: [Cake\Console\Exception\MissingShellException] Shell class for "Sever" could not be found. in /var/www/html/cakephp_seriestv/vendor/cakephp/cakephp/src/Console/ShellDispatcher.php on line 327
+Exception Attributes: array (
+  'class' => 'Sever',
+)
+Stack Trace:
+#0 /var/www/html/cakephp_seriestv/vendor/cakephp/cakephp/src/Console/ShellDispatcher.php(226): Cake\Console\ShellDispatcher->findShell('Sever')
+#1 /var/www/html/cakephp_seriestv/vendor/cakephp/cakephp/src/Console/ShellDispatcher.php(182): Cake\Console\ShellDispatcher->_dispatch(Array)
+#2 /var/www/html/cakephp_seriestv/vendor/cakephp/cakephp/src/Console/ShellDispatcher.php(128): Cake\Console\ShellDispatcher->dispatch(Array)
+#3 /var/www/html/cakephp_seriestv/bin/cake.php(34): Cake\Console\ShellDispatcher::run(Array)
+#4 {main}
+
+

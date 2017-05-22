@@ -22,19 +22,6 @@ class ArticlesController extends AppController
     {
       $articles = $this->paginate($this->Articles);
 
-              $this->Articles->settings = array(
-                'special',
-                'conditions' => array(
-                  'private' => '0',
-                ),
-              );
-    }
-
-
-    public function logged()
-    {
-      $articles = $this->paginate($this->Articles);
-
       $this->set(compact('articles'));
       $this->set('_serialize', ['articles']);
     }

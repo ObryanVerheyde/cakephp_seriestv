@@ -59,6 +59,9 @@ $cakeDescription = 'CakePHP: the rapid development php framework';
         <?= $this->fetch('content') ?>
     </div>
     <footer>
+      <ul>
+        <li> <a href="http://localhost:8765/contact/index">Contactez-nous</a> </li>
+      </ul>
     </footer>
 </body>
 </html>
