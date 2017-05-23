@@ -53,8 +53,6 @@ Router::scope('/', function (RouteBuilder $routes) {
     $routes->connect('/contact', ['controller' => 'Contact', 'index']);
 
 
-
-
     /**
      * ...and connect the rest of 'Pages' controller's URLs.
      */
@@ -76,7 +74,13 @@ Router::scope('/', function (RouteBuilder $routes) {
      */
     $routes->fallbacks(DashedRoute::class);
 });
+Router::prefix('Admin', ['_namePrefix' => 'admin:'], function ($routes) {
+    // Connecte les routes.
+    $routes->connect('/admin/articles', ['controller' => 'Articles', 'action' => 'index']);
 
+    $routes->fallbacks(DashedRoute::class);
+});
+Router::connect('admin/articles', ['controller' => 'Articles', 'action' => 'logged']);
 /**
  * Load all plugin routes. See the Plugin documentation on
  * how to customize the loading of plugin routes.

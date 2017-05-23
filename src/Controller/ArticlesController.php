@@ -2,6 +2,7 @@
 namespace App\Controller;
 
 use App\Controller\AppController;
+use Cake\Event\Event;
 
 /**
  * Articles Controller
@@ -12,6 +13,19 @@ use App\Controller\AppController;
  */
 class ArticlesController extends AppController
 {
+
+  public function beforeFilter(Event $event)
+  {
+
+    if($this->Auth->user('roles') == 'user') {
+      $this->Auth->allow('index');
+    }
+    elseif($this->Auth->user('roles') == 'admin') {
+      $this->Auth->allow('*'); //Note difference in superadmin priviledges
+
+    }
+  }
+
     /**
      * Index method
      *
@@ -25,7 +39,7 @@ class ArticlesController extends AppController
       $this->set('_serialize', ['articles']);
 
     }
-    
+
     public function index() {
     $query = $this->Articles->find('all')->where(['private' => 0]);
     $this->set('articles', $this->paginate($query));

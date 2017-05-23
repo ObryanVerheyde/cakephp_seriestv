@@ -73,10 +73,6 @@ class UsersTable extends Table
             #->requirePresence('bio', 'create')
             #->notEmpty('bio');
 
-        $validator
-            ->boolean('admin')
-            ->requirePresence('admin', 'create')
-            ->notEmpty('admin');
 
         return $validator;
     }

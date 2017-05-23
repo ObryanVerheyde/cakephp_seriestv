@@ -38,7 +38,7 @@
             </tr>
         </tbody>
         <?php endforeach; } ?>
-<!-- LOGGED iN                             (I add page logged but it's not cool thing)                                     -->    
+<!-- LOGGED iN                             (I add page logged but it's not cool thing)                                     -->
       <?php if ($this->request->session()->read('Auth.User.username')) { ?>
         <tbody>
             <?php foreach ($articles as $article): ?>

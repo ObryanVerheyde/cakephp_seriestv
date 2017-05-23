@@ -24,7 +24,7 @@ class ContactController extends AppController
          $contact = new ContactForm();
          if ($this->request->is('post')) {
              if ($contact->execute($this->request->getData())) {
-                 $this->redirect('/');
+                $this->redirect('/');
              } else {
                  $this->Flash->error('Il y a eu un problème lors de la soumission de votre formulaire.');
              }

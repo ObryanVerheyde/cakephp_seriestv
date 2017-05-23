@@ -26,18 +26,38 @@ class UsersController extends AppController
         // You should not add the "login" action to allow list. Doing so would
         // cause problems with normal functioning of AuthComponent.
         $this->Auth->allow('add', 'logout');
+
     }
 
     public function login()
     {
       if ($this->request->is('post')) {
+       $user = $this->Auth->identify();
+       if ($user) {
+           $this->Auth->setUser($user);
+
+
+           $loggedUser = $this->request->session()->read('Auth.User');
+           if($loggedUser['admin'] == '0'){
+               return $this->redirect('/articles/logged');
+           }else if($loggedUser['admin'] == '1'){
+               return $this->redirect('/admin/articles');
+           }else{
+               return $this->redirect($this->Auth->redirectUrl());
+           }
+
+
+       }
+
+   }
+    /*  if ($this->request->is('post')) {
           $user = $this->Auth->identify();
           if ($user) {
               $this->Auth->setUser($user);
               return $this->redirect($this->Auth->redirectUrl());
           }
           $this->Flash->error(__('Invalid username or password, try again'));
-          }
+        }*/
     }
 
 public function logout()
