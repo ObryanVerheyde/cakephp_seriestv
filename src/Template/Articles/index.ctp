@@ -23,19 +23,22 @@
         <?php if(is_null($this->request->session()->read('Auth.User.username'))){ ?>
         <tbody>
           <p>You're not logged, you can't see private articles.</p>
-            <?php foreach ($articles as $article): ?>
+            <?php
+              foreach ($articles as $article):
+                echo $this->template('index', [
+	                'private' => 0
+                ]);
+            ?>
             <tr>
                 <td><?= h($article->title) ?></td>
                 <td><?= h($article->content) ?></td>
                 <td class="actions">
                     <?= $this->Html->link(__('View'), ['action' => 'view', $article->id]) ?>
-                    <?= $this->Html->link(__('Edit'), ['action' => 'edit', $article->id]) ?>
-                    <?= $this->Form->postLink(__('Delete'), ['action' => 'delete', $article->id], ['confirm' => __('Are you sure you want to delete # {0}?', $article->id)]) ?>
                 </td>
             </tr>
         </tbody>
         <?php endforeach; } ?>
-<!-- LOGGED iN                                                                      -->
+<!-- LOGGED iN                             (I add page logged but it's not cool thing)                                     -->    
       <?php if ($this->request->session()->read('Auth.User.username')) { ?>
         <tbody>
             <?php foreach ($articles as $article): ?>
@@ -44,6 +47,7 @@
                 <td><?= h($article->content) ?></td>
                 <td class="actions">
                     <?= $this->Html->link(__('View'), ['action' => 'view', $article->id]) ?>
+                    <!-- add if admin here -->
                     <?= $this->Html->link(__('Edit'), ['action' => 'edit', $article->id]) ?>
                     <?= $this->Form->postLink(__('Delete'), ['action' => 'delete', $article->id], ['confirm' => __('Are you sure you want to delete # {0}?', $article->id)]) ?>
                 </td>

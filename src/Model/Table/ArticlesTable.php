@@ -19,6 +19,13 @@ use Cake\Validation\Validator;
  */
 class ArticlesTable extends Table
 {
+  public $paginate = [
+      'fields' => ['Articles.id', 'Articles.created'],
+      'limit' => 25,
+      'order' => [
+          'Articles.title' => 'asc'
+      ]
+  ];
 
     /**
      * Initialize method

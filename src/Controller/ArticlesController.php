@@ -12,19 +12,24 @@ use App\Controller\AppController;
  */
 class ArticlesController extends AppController
 {
-
     /**
      * Index method
      *
      * @return \Cake\Http\Response|null
      */
-    public function index()
+    public function logged()
     {
       $articles = $this->paginate($this->Articles);
 
       $this->set(compact('articles'));
       $this->set('_serialize', ['articles']);
+
     }
+    
+    public function index() {
+    $query = $this->Articles->find('all')->where(['private' => 0]);
+    $this->set('articles', $this->paginate($query));
+}
     /**
      * View method
      *
