@@ -22,7 +22,8 @@ class ArticlesController extends AppController
     }
     elseif($this->Auth->user('roles') == 'admin') {
       $this->Auth->allow('*'); //Note difference in superadmin priviledges
-
+    }else{
+      $this->Auth->allow('index');
     }
   }
 
